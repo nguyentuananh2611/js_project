@@ -25,7 +25,7 @@
   }
   
   .navbar_div .container_main_menu {
-    max-width: 1170px;
+    /* max-width: 1170px; */
     padding: 0 15px;
     margin: 0 auto;
   }
@@ -123,7 +123,7 @@
   }
   
   .contaniner__footer {
-    max-width: 1170px;
+    /* max-width: 1170px; */
     background-color: #0c5f33;
     padding: 25px 40px 40px 40px;
     margin: 0 auto;
