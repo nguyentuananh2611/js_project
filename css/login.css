@@ -1,0 +1,50 @@
+:root {
+    --font-family: 'Roboto', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    font-family:  var(--font-family);
+}
+main {
+    background-color: aliceblue;
+}
+#main_content {
+    height: 550px;
+    
+    animation: mymove 5s infinite; 
+}
+
+@keyframes mymove {
+    from {box-shadow: none;}
+    to {box-shadow: 2px 2px 3px gray;}
+  }
+.input_login {
+    background-color: lightgreen;
+    margin: 10px 0 5px 0;
+    border: 1px solid lavender;
+}
+input {
+  background-color: lightgreen;
+    border: none;
+    outline: none;
+}
+#login ,#logout {
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: 5px 0;
+    margin-right: 10px;
+}
+#login:hover {
+    background-color: lightskyblue;
+}
+#close {
+    background-color: aliceblue;
+    border: none;
+   
+}
+
+
+
+
+

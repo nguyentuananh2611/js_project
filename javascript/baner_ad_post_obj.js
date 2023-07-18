@@ -1,4 +1,4 @@
-export const LUNAR_CALENDAR_POST = [
+const LUNAR_CALENDAR_POST = [
   {
     id: 1,
     title:
@@ -21,8 +21,7 @@ export const LUNAR_CALENDAR_POST = [
     image: "../image/top-3-tuoi-tot-nhat-thang-7-duong-lich.png",
   },
 ];
-
-export const LUNAR_CALENDAR_POST_DETAILS = [
+const LUNAR_CALENDAR_POST_DETAILS = [
   {
     id: 1,
     detail_id: 1,
@@ -265,7 +264,7 @@ export const LUNAR_CALENDAR_POST_DETAILS = [
 </div>`,
   },
 ];
-export const AD_CONTENT = [
+const AD_CONTENT = [
   {
     id: 1,
     image: "../image/KhaiTruongEdtech.jpg",
@@ -277,4 +276,115 @@ export const AD_CONTENT = [
     title:
       "Sự chú ý trên TikTok có chuyển hóa thành tác động kinh doanh không?",
   },
+  {
+    id: 3,
+    image: "../image/con-so-may-man-12-thang-7",
+    title: "Con số may mắn của 12 con giáp ngày 12 tháng 7 năm 2023?",
+  },
+  {
+    id: 4,
+    image: "../image/giai-ma-giac-mo-thay-ran-1.png",
+    title: "Giải mã giấc mơ thấy rắn - Mơ thấy rắn là tốt hay xấu?",
+  },
+  {
+    id: 5,
+    image: "../image/tu-vi-12-con-giap-ngay-15-thang-7.png",
+    title: "Tử vi 12 con giáp ngày 15 tháng 7 năm 2023",
+  },
 ];
+
+window.onload = () => {
+  fn_loadSidebar();
+  fn_load_content();
+  fn_clickCloseBanner();
+};
+
+const fn_loadSidebar = () => {
+  const sidebar = document.getElementById("sidebar");
+  let lengthAd = LUNAR_CALENDAR_POST.length;
+  let lengthAdContent = AD_CONTENT.length;
+  let sidebarHtml = ` <div class="sidebar_contents pt-3">
+<h4 class="sidebar_title mt-3">Nhiều người đọc</h4>`;
+  for (let i = 0; i < lengthAd; i++) {
+    sidebarHtml += `
+    <div class="card sidebar_content">
+    <div class="row">
+        <div class="col-md-6 d-flex align-items-center">
+            <a href="../html/post_detail.html?id=${LUNAR_CALENDAR_POST[i].id}" target="_blank" class="sidebar_thumbnail">
+                <img src="${LUNAR_CALENDAR_POST[i].image}" alt="Image" class="card-img sidebar_thumbnail_img">
+            </a>
+        </div>
+        <div class="col-md-6 sidebar_description">
+            <a href="../html/post_detail.html?id=${LUNAR_CALENDAR_POST[i].id}">
+                <h5 class="card-text sidebar_description_infor">
+                   ${LUNAR_CALENDAR_POST[i].title}
+                </h5>
+            </a>
+        </div>
+    </div>
+</div>
+    `;
+  }
+  sidebarHtml += `</div>`;
+  for (let i = 0; i < lengthAdContent; i++) {
+    sidebarHtml += `
+    <div class="sidebar_content_intro mt-5 pb-3" style="width: 100%;">
+    <div class="card">
+        <a href="#">
+            <div class="sidebar_content_intro_thumbnail">
+                <img src="${AD_CONTENT[i].image}" class="card-img-top sidebar_content_intro_img" alt="Hình ảnh">
+            </div>
+        </a>
+        <div class="card-body">
+            <a href="#">
+                <h5 class="card-title">${AD_CONTENT[i].title}</h5>
+            </a>
+        </div>
+    </div>`;
+    if (i == 0) {
+      sidebarHtml += ` <div class="sidebar_content_intro_new">
+        <img src="../image/new_gif.gif" alt="">
+    </div>`;
+    }
+
+    sidebarHtml += `</div>`;
+  }
+  sidebar.innerHTML = sidebarHtml;
+};
+
+const fn_clickCloseBanner = () => {
+  const iconDelete = document.getElementsByClassName("banner_ad_close");
+  console.log(iconDelete);
+  let lengCloseIcon = iconDelete.length;
+  for (let i = 0; i < lengCloseIcon; i++) {
+    iconDelete[i].addEventListener("click", (e) => {
+      const slide = document.getElementById("slide");
+      slide.classList.add("hidden");
+    });
+  }
+};
+
+const fn_load_content = () => {
+  let lengDetail = LUNAR_CALENDAR_POST_DETAILS.length;
+  let url = new URL(window.location.href);
+  let id_url = url.searchParams.get("id");
+
+  const post = document.querySelector(".post");
+  let htmls = "";
+  let arr = [];
+  for (let i = 0; i < lengDetail; i++) {
+    arr.push(LUNAR_CALENDAR_POST_DETAILS[i].id);
+  }
+  if (arr.includes(parseInt(id_url))) {
+    htmls += `${LUNAR_CALENDAR_POST_DETAILS[id_url - 1].description}`;
+    post.innerHTML = htmls;
+  } else {
+    post.innerHTML = `<h3 class="title_404">Trang không tồn tại vui lòng quay trở lại <a href="../html">Trang chủ</a></h3>
+    <div class="thumb_404">
+    <img src="https://png.pngtree.com/png-vector/20190130/ourlarge/pngtree-404-error-interface-art-word-design-404-error-page404-png-image_638897.jpg" alt="Image-404" class="image_404">
+    </div>`;
+    document.querySelector(".news").classList.add("hidden");
+    document.getElementById("sidebar").classList.add("hidden");
+    post.style.height = "300px";
+  }
+};
