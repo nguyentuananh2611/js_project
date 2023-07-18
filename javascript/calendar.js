@@ -793,7 +793,18 @@ function addClickEventToTDs() {
 }
 
 function renderTable(e) {
+ 
+
   month = e.id - 1;
   manipulate(month);
+  addClickEventToTDs();
+
+  let li = e.parentElement;
+  let ul = li.parentElement;
+  let a = ul.querySelectorAll("a");
+  for (let i = 0; i < a.length; i++) {
+    a[i].classList.remove("background__color");
+  }
   e.classList.toggle("background__color");
+
 }
