@@ -1,0 +1,95 @@
+/* Ảnh quảng cáo  */
+#slide {
+    margin-top: -4px;
+}
+
+#slide .carousel-inner {
+    left: 0px;
+    display: block;
+    transition: all 800ms ease 0s;
+}
+
+.hidden {
+    display: none;
+}
+
+.banner_ad {
+    position: relative;
+    cursor: pointer;
+
+}
+
+.banner_ad_thumbnail {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.ad_icon_next {
+    cursor: pointer;
+}
+
+.banner_ad_close {
+    right: 0px;
+    top: 0px;
+    font-size: 25px;
+    padding: 0px 2px 5px 2px;
+}
+
+.banner_ad_ask {
+    right: 22px;
+    top: 0px;
+    font-size: 18px;
+    padding: 2px 5px 2px 6px;
+}
+
+.banner_ad_ask, .banner_ad_close {
+    position: absolute;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #c9c3c3;
+    color: #000;
+    z-index: 1;
+    color: #3885cd;
+    height: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ad_icon_next i {
+    font-size: 30px;
+    padding: 20px 25px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    bottom: 10%;
+    cursor: pointer;
+    transition: box -shadow 0.3s ease;
+}
+
+.ad_icon_next:hover i {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.banner_ad_text {
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    left: 10px;
+    bottom: 10%;
+    cursor: pointer;
+
+}
+
+.banner_ad_text h1 {
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    word-spacing: 5px;
+    font-weight: 600;
+    color: #000;
+}
