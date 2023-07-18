@@ -1,857 +1,563 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=ư, initial-scale=1.0">
-        <title>LỊCH VẠN NIÊN</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <link rel="shortcut icon" href="../image/triet-ly-am-duong-ngu-hanh-trong-doi-song-van-hoa-cua-nguoi-viet.jpg" type="image/x-icon">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/header_footer.css">
-        <link rel="stylesheet" href="../css/Lunar_Today.css">
-        <link rel="stylesheet" href="../css/adBanner.css">
-        <link rel="stylesheet" href="../css/adSidebar.css">
-        <link rel="stylesheet" href="../css/ad_banner_news.css">
-    </head>
-    <body onload="timeClock()">
-        <main>
-            <nav title="tuấn anh">
-                <div class="navbar_div">
-                    <div class="container_main_menu container">
-                        <div class="navbar__header">
-                            <img src="../image/triet-ly-am-duong-ngu-hanh-trong-doi-song-van-hoa-cua-nguoi-viet.jpg" alt="">
-                            <a href="#" class="navbar__brand" title="xem lịch âm">
-                                LỊCH VẠN NIÊN
-                            </a
-              >
-                            <button class="navbar__button">
-                                <i class="fa-solid fa-bars"></i>
-                            </button>
-                        </div>
-                        <div class="navbar__collapse">
-                            <ul class="navbar__right">
-                                <li>
-                                    <a
-                                        id="time__clock"
-                                        title="Đồng hồ thời gian"
-                                        href="#"
-                                        style="font-size: 20px"
-                                    >
-                                        ⌚ 14: 41 : 31
-                                    </a
-                  >
-                                </li>
-                                <li>
-                                    <a href="#">LỊCH ÂM HÔM NAY</a>
-                                </li>
-                                <li>
-                                    <a href="#">ĐỔI NGÀY ÂM DƯƠNG</a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#">LỊCH THÁNG</a>
-                                    <ul class="dropdown__menu" style="display: none">
-                                        <li>
-                                            <a href="#">LỊCH ÂM THÁNG 1</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">LỊCH ÂM THÁNG 2</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">LỊCH ÂM THÁNG 3</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">LỊCH ÂM THÁNG 4</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">LỊCH ÂM THÁNG 5</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">LỊCH ÂM THÁNG 6</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">LỊCH ÂM THÁNG 7</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">LỊCH ÂM THÁNG 8</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">LỊCH ÂM THÁNG 9</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">LỊCH ÂM THÁNG 10</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">LỊCH ÂM THÁNG 11</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">LỊCH ÂM THÁNG 12</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#">LỊCH NĂM</a>
-                                    <ul class="dropdown__menu" style="display: none">
-                                        <li>
-                                            <a href="#">LỊCH ÂM 2015</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">LỊCH ÂM 2016</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">LỊCH ÂM 2017</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">LỊCH ÂM 2018</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">LỊCH ÂM 2019</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">LỊCH ÂM 2020</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">LỊCH ÂM 2021</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">LỊCH ÂM 2022</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">LỊCH ÂM 2023</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">LỊCH ÂM 2024</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">LỊCH ÂM 2025</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="login.html">ĐĂNG NHẬP</a>
-                                </li>
-                                <li>
-                                    <a href="register.html">ĐĂNG KÝ</a>
-                                </li>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LỊCH VẠN NIÊN</title>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="../image/triet-ly-am-duong-ngu-hanh-trong-doi-song-van-hoa-cua-nguoi-viet.jpg"
+          type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/header_footer.css"/>
+    <link rel="stylesheet" href="../css/Lunar_Today.css"/>
+</head>
+<body onload="timeClock()">
+<main>
+    <nav title="tuấn anh">
+        <div class="navbar_div">
+            <div class="container_main_menu container">
+                <div class="navbar__header">
+                    <img
+                            src="../image/triet-ly-am-duong-ngu-hanh-trong-doi-song-van-hoa-cua-nguoi-viet.jpg"
+                            alt=""
+                    />
+                    <a href="#" class="navbar__brand" title="xem lịch âm"
+                    >LỊCH VẠN NIÊN</a
+                    >
+                    <button class="navbar__button">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                <div class="navbar__collapse">
+                    <ul class="navbar__right">
+                        <li>
+                            <a
+                                    id="time__clock"
+                                    title="Đồng hồ thời gian"
+                                    href="#"
+                                    style="font-size: 20px"
+                            >⌚ 14: 41 : 31</a
+                            >
+                        </li>
+                        <li><a href="#">LỊCH ÂM HÔM NAY</a></li>
+                        <li><a href="#">ĐỔI NGÀY ÂM DƯƠNG</a></li>
+                        <li class="dropdown">
+                            <a href="#" onclick="toggleMenu(this)">LỊCH THÁNG</a>
+                            <ul class="dropdown__menu" style="display: none">
+                                <li><a href="#" id="1" onclick="renderTable(this)">LỊCH ÂM THÁNG 1</a></li>
+                                <li><a href="#" id="2" onclick="renderTable(this)">LỊCH ÂM THÁNG 2</a></li>
+                                <li><a href="#" id="3" onclick="renderTable(this)">LỊCH ÂM THÁNG 3</a></li>
+                                <li><a href="#" id="4" onclick="renderTable(this)">LỊCH ÂM THÁNG 4</a></li>
+                                <li><a href="#" id="5" onclick="renderTable(this)">LỊCH ÂM THÁNG 5</a></li>
+                                <li><a href="#" id="6" onclick="renderTable(this)">LỊCH ÂM THÁNG 6</a></li>
+                                <li><a href="#" id="7" onclick="renderTable(this)">LỊCH ÂM THÁNG 7</a></li>
+                                <li><a href="#" id="8" onclick="renderTable(this)">LỊCH ÂM THÁNG 8</a></li>
+                                <li><a href="#" id="9" onclick="renderTable(this)">LỊCH ÂM THÁNG 9</a></li>
+                                <li><a href="#" id="10" onclick="renderTable(this)">LỊCH ÂM THÁNG 10</a></li>
+                                <li><a href="#" id="11" onclick="renderTable(this)">LỊCH ÂM THÁNG 11</a></li>
+                                <li><a href="#" id="12" onclick="renderTable(this)">LỊCH ÂM THÁNG 12</a></li>
                             </ul>
-                        </div>
-                    </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" onclick="toggleMenu(this)">LỊCH NĂM</a>
+                            <ul class="dropdown__menu" style="display: none">
+                                <li><a href="#">LỊCH ÂM 2015</a></li>
+                                <li><a href="#">LỊCH ÂM 2016</a></li>
+                                <li><a href="#">LỊCH ÂM 2017</a></li>
+                                <li><a href="#">LỊCH ÂM 2018</a></li>
+                                <li><a href="#">LỊCH ÂM 2019</a></li>
+                                <li><a href="#">LỊCH ÂM 2020</a></li>
+                                <li><a href="#">LỊCH ÂM 2021</a></li>
+                                <li><a href="#">LỊCH ÂM 2022</a></li>
+                                <li><a href="#">LỊCH ÂM 2023</a></li>
+                                <li><a href="#">LỊCH ÂM 2024</a></li>
+                                <li><a href="#">LỊCH ÂM 2025</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="login.html">ĐĂNG NHẬP</a></li>
+                        <li><a href="register.html">ĐĂNG KÝ</a></li>
+                    </ul>
                 </div>
-                <br>
-                <br>
-                <br>
-            </nav>
-            <section title="banner ngọc minh" class="container">
-                <div id="slide" class="carousel slide" data-bs-ride="carousel">
-                    <!-- Indicators/dots -->
-                    <div class="carousel-indicators">
-                        <button
-                            type="button"
-                            data-bs-target="#slide"
-                            data-bs-slide-to="0"
-                            class="active"
-                        ></button>
-                        <button type="button" data-bs-target="#slide" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#slide" data-bs-slide-to="2"></button>
-                    </div>
-                    <!-- The slideshow/carousel -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="banner_ad">
-                                <a href="#">
-                                    <img src="../image/qc_1.jpeg" alt="banner_ad Image" class="img-fluid banner_ad_thumbnail">
-                                </a>
-                                <span class="close-button banner_ad_close">&times;</span>
-                                <span class="close-button banner_ad_ask">?</span>
-                                <div class="ad_icon_next" data-bs-target="#slide" data-bs-slide="next">
-                                    <i class="fa-solid fa-angle-right"></i>
-                                </div>
-                            </div>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+    </nav>
+
+    <section title="banner ngọc minh"></section>
+
+    <section title="lịch và quảng cáo : minh, trung; flex" class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="Lunar_calendar_today">
+                        <h1 style="font-size: 26px; margin: 10px 0;">Lịch âm hôm nay</h1>
+                        <h2 style="font-size: 12px;"><small class="tag"><b>xem lịch âm hôm nay</b></small></h2>
+                        <div class="solar_calendar d-flex mb-2">
+                            <p style="font-size: 18px; margin: 0;">Ngày <b>Dương Lịch</b>:</p>
+                            <span class="solar_calendar_date" id="solar_today">aaa</span>
                         </div>
-                        <div class="carousel-item">
-                            <div class="banner_ad">
-                                <a href="#">
-                                    <img src="../image/edtech_.png" alt="banner_ad Image" class="img-fluid banner_ad_thumbnail">
-                                </a>
-                                <span class="close-button banner_ad_close">&times;</span>
-                                <span class="close-button banner_ad_ask">?</span>
-                                <div class="ad_icon_next" data-bs-target="#slide" data-bs-slide="next">
-                                    <i class="fa-solid fa-angle-right"></i>
-                                </div>
-                            </div>
+                        <div class="lunar_calendar d-flex mb-2">
+                            <p style="font-size: 18px; margin: 0;">Ngày <b>Âm Lịch</b>:</p>
+                            <span class="lunar_calendar_date" id="lunar_today">aaa</span>
                         </div>
-                        <div class="carousel-item">
-                            <div class="banner_ad">
-                                <a href="#">
-                                    <img src="../image/ad_2.jpg" alt="banner_ad Image" class="img-fluid banner_ad_thumbnail">
-                                </a>
-                                <span class="close-button banner_ad_close">&times;</span>
-                                <span class="close-button banner_ad_ask">?</span>
-                                <div class="ad_icon_next" data-bs-target="#slide" data-bs-slide="next">
-                                    <i class="fa-solid fa-angle-right"></i>
-                                </div>
-                            </div>
+                        <p>Ngày <b id="zodiac_day">NT</b> tháng <b id="zodiac_month">NM</b> năm <b
+                                id="zodiac_year">Quý Mão</b></p>
+                        <p>Ngày <b id="Tianmen_day">Chu Tước</b>: <span id="Tianmen_context">xuất hành, cầu tài đều xấu, hay mất của, kiện cáo thua vì đuối lý</span></p>
+                        <p>Giờ <b id="path">Hoàng Đạo</b>: <span id="zodiac1">Tý (23-1)</span>, <span
+                                id="zodiac2">Tý (23-1)</span>, <span
+                                id="zodiac3">Tý (23-1)</span>, <span id="zodiac4">Tý (23-1)</span>, <span id="zodiac5">Tý (23-1)</span>,
+                            <span id="zodiac6">Tý (23-1)</span>
+                        </p>
+                        <div class="d-flex">
+                            <i class="fa-solid fa-tag fa-rotate-90"
+                               style="color: #000; margin:0 5px 5px 0; width: 20px;"></i>
+                            <h2 style="font-size: 12px;">
+                                <small class="tag"><b>xem lịch âm</b></small>
+                                <small class="tag"><b>ngày âm lịch</b></small>
+                                <small class="tag"><b>xem ngày tốt xấu</b></small>
+                                <small class="tag"><b>lịch âm 2023 hôm nay</b></small>
+                                <small class="tag"><b>âm lịch hôm nay là bao nhiêu</b></small>
+                            </h2>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section title="lịch và quảng cáo : minh, trung; flex" class="container">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="Lunar_calendar_today">
-                                <h1 style="font-size: 26px; margin: 10px 0;">Lịch âm hôm nay</h1>
-                                <h2 style="font-size: 12px;">
-                                    <small class="tag">
-                                        <b>xem lịch âm hôm nay</b>
-                                    </small>
-                                </h2>
-                                <div class="solar_calendar d-flex mb-2">
-                                    <p style="font-size: 18px; margin: 0;">
-                                        Ngày
-                                        <b>Dương Lịch</b>
-                                        :
-                                    </p>
-                                    <span class="solar_calendar_date" id="solar_today">aaa</span>
-                                </div>
-                                <div class="lunar_calendar d-flex mb-2">
-                                    <p style="font-size: 18px; margin: 0;">
-                                        Ngày
-                                        <b>Âm Lịch</b>
-                                        :
-                                    </p>
-                                    <span class="lunar_calendar_date" id="lunar_today">aaa</span>
-                                </div>
-                                <p>
-                                    Ngày
-                                    <b id="zodiac_day">NT</b>
-                                    tháng
-                                    <b id="zodiac_month">NM</b>
-                                    năm
-                                    <b id="zodiac_year">Quý Mão</b>
-                                </p>
-                                <p>
-                                    Ngày
-                                    <b id="Tianmen_day">Chu Tước</b>
-                                    :
-                                    <span id="Tianmen_context">xuất hành, cầu tài đều xấu, hay mất của, kiện cáo thua vì đuối lý</span>
-                                </p>
-                                <p>
-                                    Giờ
-                                    <b id="path">Hoàng Đạo</b>
-                                    :
-                                    <span id="zodiac1">Tý (23-1)</span>
-                                    ,
-                                    <span id="zodiac2">Tý (23-1)</span>
-                                    ,
-                                    <span id="zodiac3">Tý (23-1)</span>
-                                    ,
-                                    <span id="zodiac4">Tý (23-1)</span>
-                                    ,
-                                    <span id="zodiac5">Tý (23-1)</span>
-                                    ,
-                                    <span id="zodiac6">Tý (23-1)</span>
-                                </p>
-                                <div class="d-flex">
-                                    <i class="fa-solid fa-tag fa-rotate-90" style="color: #000; margin:0 5px 5px 0; width: 20px;"></i>
-                                    <h2 style="font-size: 12px;">
-                                        <small class="tag">
-                                            <b>xem lịch âm</b>
-                                        </small>
-                                        <small class="tag">
-                                            <b>ngày âm lịch</b>
-                                        </small>
-                                        <small class="tag">
-                                            <b>xem ngày tốt xấu</b>
-                                        </small>
-                                        <small class="tag">
-                                            <b>lịch âm 2023 hôm nay</b>
-                                        </small>
-                                        <small class="tag">
-                                            <b>âm lịch hôm nay là bao nhiêu</b>
-                                        </small>
-                                    </h2>
-                                </div>
-                                <!--Calender-->
-                                <div class="section mt-3">
-                                    <div class="vncal-header">
-                                        <div class="vncal-header-titles">
-                                            <h2>ÂM LỊCH NGÀY 13 THÁNG 7 2023</h2>
-                                        </div>
-                                    </div>
-                                    <table class="vncal-days">
-                                        <thead>
-                                            <tr>
-                                                <th>DƯƠNG LỊCH</th>
-                                                <th>ÂM LỊCH</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="titleDuong">Tháng 7 Năm 2023</td>
-                                                <td class="titleAm">Tháng 5 Năm 2023 (Quý Mão)</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="duong">13</div>
-                                                    <div class="chitiet"></div>
-                                                </td>
-                                                <td>
-                                                    <div class="am">26</div>
-                                                    <!--                        <div class="chitiet"><p>Ngày: <b>Nhâm Thân</b>, Tháng:<b>Mậu Ngọ</b></p>-->
-                                                    <!--                            <p>Tiết: <b>Tiểu thử</b></p></div>-->
-                                                    <div class="chitiet">
-                                                        <p>
-                                                            Ngày:
-                                                            <b>Nhâm Thân</b>
-                                                            , Tháng:
-                                                            <b>abc</b>
-                                                        </p>
-                                                        <p>
-                                                            Tiết:
-                                                            <b>Tiểu thử</b>
-                                                        </p>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="tot">Giờ Hoàng Đạo (Giờ Tốt)</td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    Tý (23-1), Sửu (1-3), Thìn (7-9), Tỵ (9-11), Mùi (13-15), Tuất
+                        <!--Calender-->
+                        <div class="section mt-3">
+                            <div class="vncal-header">
+                                <div class="vncal-header-titles"><h2>ÂM LỊCH NGÀY 13 THÁNG 7 2023</h2></div>
+                            </div>
+                            <table class="vncal-days">
+                                <thead>
+                                <tr>
+                                    <th>DƯƠNG LỊCH</th>
+                                    <th>ÂM LỊCH</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="titleDuong">Tháng 7 Năm 2023</td>
+                                    <td class="titleAm">Tháng 5 Năm 2023 (Quý Mão)</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="duong">13</div>
+                                        <div class="chitiet"></div>
+                                    </td>
+                                    <td>
+                                        <div class="am">26</div>
+                                        <!--                        <div class="chitiet"><p>Ngày: <b>Nhâm Thân</b>, Tháng:<b>Mậu Ngọ</b></p>-->
+                                        <!--                            <p>Tiết: <b>Tiểu thử</b></p></div>-->
+                                        <div class="chitiet"><p>Ngày: <b>Nhâm Thân</b>, Tháng:<b>abc</b></p>
+                                            <p>Tiết: <b>Tiểu thử</b></p></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="tot">Giờ Hoàng Đạo (Giờ Tốt)</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Tý (23-1), Sửu (1-3), Thìn (7-9), Tỵ (9-11), Mùi (13-15), Tuất
                                         (19-21)
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <br>
-                                    <br>
-                                    <a class="red-link">MÀU ĐỎ: NGÀY TỐT</a>
-                                    ,
-                                    <a class="violet-link">
-                                        MÀU TÍM: NGÀY
-                            XẤU
-                                    </a>
-                                    <div class="vncal-header">
-                                        <div class="vncal-header-preview">
-                                            <span id="calendar-prev">◄</span>
-                                        </div>
-                                        <div class="vncal-header-title text-uppercase">
-                                            <h4>LỊCH ÂM THÁNG 7 NĂM 2023</h4>
-                                        </div>
-                                        <div class="vncal-header-next">
-                                            <span>►</span>
-                                        </div>
-                                    </div>
-                                    <table class="vncal">
-                                        <thead>
-                                            <tr>
-                                                <th>CHỦ NHẬT</th>
-                                                <th>THỨ HAI</th>
-                                                <th>THỨ BA</th>
-                                                <th>THỨ TƯ</th>
-                                                <th>THỨ NĂM</th>
-                                                <th>THỨ SÁU</th>
-                                                <th>THỨ BẢY</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="calendar-dates">
-                                            <tr>
-                                                <td class="skip"></td>
-                                                <td class="skip"></td>
-                                                <td class="skip"></td>
-                                                <td class="skip"></td>
-                                                <td class="skip"></td>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 1 tháng 7 năm 2023">
-                                                        <div class="dao tot">●</div>
-                                                        <div class="duong sat">1</div>
-                                                        <div class="am">14/5 Canh Thân</div>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 2 tháng 7 năm 2023">
-                                                        <div class="dao tot">●</div>
-                                                        <div class="duong sun">2</div>
-                                                        <div class="am">15 Tân Dậu</div>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 3 tháng 7 năm 2023">
-                                                        <div class="dao">○</div>
-                                                        <div class="duong">3</div>
-                                                        <div class="am">16 Nhâm Tuất</div>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 4 tháng 7 năm 2023">
-                                                        <div class="dao xau">●</div>
-                                                        <div class="duong">4</div>
-                                                        <div class="am">17 Quý Hợi</div>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 5 tháng 7 năm 2023">
-                                                        <div class="dao">○</div>
-                                                        <div class="duong">5</div>
-                                                        <div class="am">18 Giáp Tý</div>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 6 tháng 7 năm 2023">
-                                                        <div class="dao tot">●</div>
-                                                        <div class="duong">6</div>
-                                                        <div class="am">19 Ất Sửu</div>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 7 tháng 7 năm 2023">
-                                                        <div class="dao xau">●</div>
-                                                        <div class="duong">7</div>
-                                                        <div class="am">20 Bính Dần</div>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 8 tháng 7 năm 2023">
-                                                        <div class="dao tot">●</div>
-                                                        <div class="duong sat">8</div>
-                                                        <div class="am">21 Đinh Mão</div>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 9 tháng 7 năm 2023">
-                                                        <div class="dao">○</div>
-                                                        <div class="duong sun">9</div>
-                                                        <div class="am">22 Mậu Thìn</div>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 10 tháng 7 năm 2023">
-                                                        <div class="dao xau">●</div>
-                                                        <div class="duong">10</div>
-                                                        <div class="am">23 Kỷ Tỵ</div>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 11 tháng 7 năm 2023">
-                                                        <div class="dao">○</div>
-                                                        <div class="duong">11</div>
-                                                        <div class="am">24 Canh Ngọ</div>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 12 tháng 7 năm 2023">
-                                                        <div class="dao xau">●</div>
-                                                        <div class="duong">12</div>
-                                                        <div class="am">25 Tân Mùi</div>
-                                                    </a>
-                                                </td>
-                                                <td class="current">
-                                                    <a href="#" title="Xem lịch âm ngày 13 tháng 7 năm 2023">
-                                                        <div class="dao tot">●</div>
-                                                        <div class="duong">13</div>
-                                                        <div class="am">26 Nhâm Thân</div>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 14 tháng 7 năm 2023">
-                                                        <div class="dao tot">●</div>
-                                                        <div class="duong">14</div>
-                                                        <div class="am">27 Quý Dậu</div>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 15 tháng 7 năm 2023">
-                                                        <div class="dao">○</div>
-                                                        <div class="duong sat">15</div>
-                                                        <div class="am">28 Giáp Tuất</div>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 16 tháng 7 năm 2023">
-                                                        <div class="dao xau">●</div>
-                                                        <div class="duong sun">16</div>
-                                                        <div class="am">29 Ất Hợi</div>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 17 tháng 7 năm 2023">
-                                                        <div class="dao">○</div>
-                                                        <div class="duong">17</div>
-                                                        <div class="am">30 Bính Tý</div>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 18 tháng 7 năm 2023">
-                                                        <div class="dao xau">●</div>
-                                                        <div class="duong">18</div>
-                                                        <div class="am">1/6 Đinh Sửu</div>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 19 tháng 7 năm 2023">
-                                                        <div class="dao">○</div>
-                                                        <div class="duong">19</div>
-                                                        <div class="am">2 Mậu Dần</div>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 20 tháng 7 năm 2023">
-                                                        <div class="dao tot">●</div>
-                                                        <div class="duong">20</div>
-                                                        <div class="am">3 Kỷ Mão</div>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 21 tháng 7 năm 2023">
-                                                        <div class="dao xau">●</div>
-                                                        <div class="duong">21</div>
-                                                        <div class="am">4 Canh Thìn</div>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 22 tháng 7 năm 2023">
-                                                        <div class="dao tot">●</div>
-                                                        <div class="duong sat">22</div>
-                                                        <div class="am">5 Tân Tỵ</div>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 23 tháng 7 năm 2023">
-                                                        <div class="dao">○</div>
-                                                        <div class="duong sun">23</div>
-                                                        <div class="am">6 Nhâm Ngọ</div>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 24 tháng 7 năm 2023">
-                                                        <div class="dao xau">●</div>
-                                                        <div class="duong">24</div>
-                                                        <div class="am">7 Quý Mùi</div>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 25 tháng 7 năm 2023">
-                                                        <div class="dao">○</div>
-                                                        <div class="duong">25</div>
-                                                        <div class="am">8 Giáp Thân</div>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 26 tháng 7 năm 2023">
-                                                        <div class="dao xau">●</div>
-                                                        <div class="duong">26</div>
-                                                        <div class="am">9 Ất Dậu</div>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 27 tháng 7 năm 2023">
-                                                        <div class="dao tot">●</div>
-                                                        <div class="duong">27</div>
-                                                        <div class="am">10 Bính Tuất</div>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 28 tháng 7 năm 2023">
-                                                        <div class="dao tot">●</div>
-                                                        <div class="duong">28</div>
-                                                        <div class="am">11 Đinh Hợi</div>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 29 tháng 7 năm 2023">
-                                                        <div class="dao">○</div>
-                                                        <div class="duong sat">29</div>
-                                                        <div class="am">12 Mậu Tý</div>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 30 tháng 7 năm 2023">
-                                                        <div class="dao xau">●</div>
-                                                        <div class="duong sun">30</div>
-                                                        <div class="am">13 Kỷ Sửu</div>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <a href="#" title="Xem lịch âm ngày 31 tháng 7 năm 2023">
-                                                        <div class="dao">○</div>
-                                                        <div class="duong">31</div>
-                                                        <div class="am">14 Canh Dần</div>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <br>
-                                </div>
-                                <!--End Calender-->
-                                <table class="good_and_bad_day mb-5" style="background-color: white;">
-                                    <div class="lunar_calendar_table_item text-white mt-5" style="padding-top: 14px; background-color: #006e33; border: 1px solid #519038;">
-                                        <h2 style="font-size: 18px;text-align: center;">
-                                            XEM NGÀY TỐT XẤU HÔM NAY
-                                        </h2>
-                                    </div>
-                                    <tr class="good_bad_row">
-                                        <td class="good_bad_column" id="one_left_row">
-                                            <b>Giờ Hoàng Đạo</b>
-                                        </td>
-                                        <td class="good_bad_column" id="one_right_row">
-                                            Tí (23:00-0:59) ; Sửu (1:00-2:59) ; Thìn
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <br> <br> <a class="red-link">MÀU ĐỎ: NGÀY TỐT</a>, <a class="violet-link">MÀU TÍM: NGÀY
+                            XẤU</a>
+                            <div class="vncal-header">
+                                <div class="vncal-header-preview"><span id="calendar-prev">◄</span></div>
+                                <div class="vncal-header-title text-uppercase"><h4>LỊCH ÂM THÁNG 7 NĂM 2023</h4></div>
+                                <div class="vncal-header-next"><span>►</span></div>
+                            </div>
+                            <table class="vncal">
+                                <thead>
+                                <tr>
+                                    <th>CHỦ NHẬT</th>
+                                    <th>THỨ HAI</th>
+                                    <th>THỨ BA</th>
+                                    <th>THỨ TƯ</th>
+                                    <th>THỨ NĂM</th>
+                                    <th>THỨ SÁU</th>
+                                    <th>THỨ BẢY</th>
+                                </tr>
+                                </thead>
+                                <tbody class="calendar-dates">
+                                <tr>
+                                    <td class="skip"></td>
+                                    <td class="skip"></td>
+                                    <td class="skip"></td>
+                                    <td class="skip"></td>
+                                    <td class="skip"></td>
+                                    <td><a href="#" title="Xem lịch âm ngày 1 tháng 7 năm 2023">
+                                        <div class="dao tot">●</div>
+                                        <div class="duong sat">1</div>
+                                        <div class="am">14/5 Canh Thân</div>
+                                    </a></td>
+                                    <td><a href="#" title="Xem lịch âm ngày 2 tháng 7 năm 2023">
+                                        <div class="dao tot">●</div>
+                                        <div class="duong sun">2</div>
+                                        <div class="am">15 Tân Dậu</div>
+                                    </a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" title="Xem lịch âm ngày 3 tháng 7 năm 2023">
+                                        <div class="dao">○</div>
+                                        <div class="duong">3</div>
+                                        <div class="am">16 Nhâm Tuất</div>
+                                    </a></td>
+                                    <td><a href="#" title="Xem lịch âm ngày 4 tháng 7 năm 2023">
+                                        <div class="dao xau">●</div>
+                                        <div class="duong">4</div>
+                                        <div class="am">17 Quý Hợi</div>
+                                    </a></td>
+                                    <td><a href="#" title="Xem lịch âm ngày 5 tháng 7 năm 2023">
+                                        <div class="dao">○</div>
+                                        <div class="duong">5</div>
+                                        <div class="am">18 Giáp Tý</div>
+                                    </a></td>
+                                    <td><a href="#" title="Xem lịch âm ngày 6 tháng 7 năm 2023">
+                                        <div class="dao tot">●</div>
+                                        <div class="duong">6</div>
+                                        <div class="am">19 Ất Sửu</div>
+                                    </a></td>
+                                    <td><a href="#" title="Xem lịch âm ngày 7 tháng 7 năm 2023">
+                                        <div class="dao xau">●</div>
+                                        <div class="duong">7</div>
+                                        <div class="am">20 Bính Dần</div>
+                                    </a></td>
+                                    <td><a href="#" title="Xem lịch âm ngày 8 tháng 7 năm 2023">
+                                        <div class="dao tot">●</div>
+                                        <div class="duong sat">8</div>
+                                        <div class="am">21 Đinh Mão</div>
+                                    </a></td>
+                                    <td><a href="#" title="Xem lịch âm ngày 9 tháng 7 năm 2023">
+                                        <div class="dao">○</div>
+                                        <div class="duong sun">9</div>
+                                        <div class="am">22 Mậu Thìn</div>
+                                    </a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" title="Xem lịch âm ngày 10 tháng 7 năm 2023">
+                                        <div class="dao xau">●</div>
+                                        <div class="duong">10</div>
+                                        <div class="am">23 Kỷ Tỵ</div>
+                                    </a></td>
+                                    <td><a href="#" title="Xem lịch âm ngày 11 tháng 7 năm 2023">
+                                        <div class="dao">○</div>
+                                        <div class="duong">11</div>
+                                        <div class="am">24 Canh Ngọ</div>
+                                    </a></td>
+                                    <td><a href="#" title="Xem lịch âm ngày 12 tháng 7 năm 2023">
+                                        <div class="dao xau">●</div>
+                                        <div class="duong">12</div>
+                                        <div class="am">25 Tân Mùi</div>
+                                    </a></td>
+                                    <td class="current"><a href="#"
+                                                           title="Xem lịch âm ngày 13 tháng 7 năm 2023">
+                                        <div class="dao tot">●</div>
+                                        <div class="duong">13</div>
+                                        <div class="am">26 Nhâm Thân</div>
+                                    </a></td>
+                                    <td><a href="#" title="Xem lịch âm ngày 14 tháng 7 năm 2023">
+                                        <div class="dao tot">●</div>
+                                        <div class="duong">14</div>
+                                        <div class="am">27 Quý Dậu</div>
+                                    </a></td>
+                                    <td><a href="#" title="Xem lịch âm ngày 15 tháng 7 năm 2023">
+                                        <div class="dao">○</div>
+                                        <div class="duong sat">15</div>
+                                        <div class="am">28 Giáp Tuất</div>
+                                    </a></td>
+                                    <td><a href="#" title="Xem lịch âm ngày 16 tháng 7 năm 2023">
+                                        <div class="dao xau">●</div>
+                                        <div class="duong sun">16</div>
+                                        <div class="am">29 Ất Hợi</div>
+                                    </a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" title="Xem lịch âm ngày 17 tháng 7 năm 2023">
+                                        <div class="dao">○</div>
+                                        <div class="duong">17</div>
+                                        <div class="am">30 Bính Tý</div>
+                                    </a></td>
+                                    <td><a href="#" title="Xem lịch âm ngày 18 tháng 7 năm 2023">
+                                        <div class="dao xau">●</div>
+                                        <div class="duong">18</div>
+                                        <div class="am">1/6 Đinh Sửu</div>
+                                    </a></td>
+                                    <td><a href="#" title="Xem lịch âm ngày 19 tháng 7 năm 2023">
+                                        <div class="dao">○</div>
+                                        <div class="duong">19</div>
+                                        <div class="am">2 Mậu Dần</div>
+                                    </a></td>
+                                    <td><a href="#" title="Xem lịch âm ngày 20 tháng 7 năm 2023">
+                                        <div class="dao tot">●</div>
+                                        <div class="duong">20</div>
+                                        <div class="am">3 Kỷ Mão</div>
+                                    </a></td>
+                                    <td><a href="#" title="Xem lịch âm ngày 21 tháng 7 năm 2023">
+                                        <div class="dao xau">●</div>
+                                        <div class="duong">21</div>
+                                        <div class="am">4 Canh Thìn</div>
+                                    </a></td>
+                                    <td><a href="#" title="Xem lịch âm ngày 22 tháng 7 năm 2023">
+                                        <div class="dao tot">●</div>
+                                        <div class="duong sat">22</div>
+                                        <div class="am">5 Tân Tỵ</div>
+                                    </a></td>
+                                    <td><a href="#" title="Xem lịch âm ngày 23 tháng 7 năm 2023">
+                                        <div class="dao">○</div>
+                                        <div class="duong sun">23</div>
+                                        <div class="am">6 Nhâm Ngọ</div>
+                                    </a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" title="Xem lịch âm ngày 24 tháng 7 năm 2023">
+                                        <div class="dao xau">●</div>
+                                        <div class="duong">24</div>
+                                        <div class="am">7 Quý Mùi</div>
+                                    </a></td>
+                                    <td><a href="#" title="Xem lịch âm ngày 25 tháng 7 năm 2023">
+                                        <div class="dao">○</div>
+                                        <div class="duong">25</div>
+                                        <div class="am">8 Giáp Thân</div>
+                                    </a></td>
+                                    <td><a href="#" title="Xem lịch âm ngày 26 tháng 7 năm 2023">
+                                        <div class="dao xau">●</div>
+                                        <div class="duong">26</div>
+                                        <div class="am">9 Ất Dậu</div>
+                                    </a></td>
+                                    <td><a href="#" title="Xem lịch âm ngày 27 tháng 7 năm 2023">
+                                        <div class="dao tot">●</div>
+                                        <div class="duong">27</div>
+                                        <div class="am">10 Bính Tuất</div>
+                                    </a></td>
+                                    <td><a href="#" title="Xem lịch âm ngày 28 tháng 7 năm 2023">
+                                        <div class="dao tot">●</div>
+                                        <div class="duong">28</div>
+                                        <div class="am">11 Đinh Hợi</div>
+                                    </a></td>
+                                    <td><a href="#" title="Xem lịch âm ngày 29 tháng 7 năm 2023">
+                                        <div class="dao">○</div>
+                                        <div class="duong sat">29</div>
+                                        <div class="am">12 Mậu Tý</div>
+                                    </a></td>
+                                    <td><a href="#" title="Xem lịch âm ngày 30 tháng 7 năm 2023">
+                                        <div class="dao xau">●</div>
+                                        <div class="duong sun">30</div>
+                                        <div class="am">13 Kỷ Sửu</div>
+                                    </a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" title="Xem lịch âm ngày 31 tháng 7 năm 2023">
+                                        <div class="dao">○</div>
+                                        <div class="duong">31</div>
+                                        <div class="am">14 Canh Dần</div>
+                                    </a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                        </div>
+                        <!--End Calender-->
+
+
+                        <table class="good_and_bad_day mb-5" style="background-color: white;">
+                            <div class="lunar_calendar_table_item text-white mt-5"
+                                 style="padding-top: 14px; background-color: #006e33; border: 1px solid #519038;">
+                                <h2 style="font-size: 18px;text-align: center;">
+                                    XEM NGÀY TỐT XẤU HÔM NAY</h2>
+                            </div>
+                            <tr class="good_bad_row">
+                                <td class="good_bad_column" id="one_left_row"><b>Giờ Hoàng Đạo</b></td>
+                                <td class="good_bad_column" id="one_right_row">Tí (23:00-0:59) ; Sửu (1:00-2:59) ; Thìn
                                     (7:00-8:59) ; Tỵ (9:00-10:59) ; Mùi (13:00-14:59) ; Tuất
                                     (19:00-20:59)
-                                        </td>
-                                    </tr>
-                                    <tr class="good_bad_row">
-                                        <td class="good_bad_column" id="two_left_row">
-                                            <b>Giờ Hắc Đạo</b>
-                                        </td>
-                                        <td class="good_bad_column" id="two_right_row">
-                                            Dần (3:00-4:59) ; Mão (5:00-6:59) ; Ngọ
+                                </td>
+                            </tr>
+                            <tr class="good_bad_row">
+                                <td class="good_bad_column" id="two_left_row"><b>Giờ Hắc Đạo</b></td>
+                                <td class="good_bad_column" id="two_right_row">Dần (3:00-4:59) ; Mão (5:00-6:59) ; Ngọ
                                     (11:00-12:59) ; Thân (15:00-16:59) ; Dậu (17:00-18:59) ; Hợi
                                     (21:00-22:59)
-                                        </td>
-                                    </tr>
-                                    <tr class="good_bad_row">
-                                        <td class="good_bad_column" id="three_left_row">
-                                            <b>Các Ngày Kỵ</b>
-                                        </td>
-                                        <td class="good_bad_column" id="three_right_row">
-                                            Phạm phải ngày : Sát chủ âm : Ngày Sát
+                                </td>
+                            </tr>
+                            <tr class="good_bad_row">
+                                <td class="good_bad_column" id="three_left_row"><b>Các Ngày Kỵ</b></td>
+                                <td class="good_bad_column" id="three_right_row">Phạm phải ngày : Sát chủ âm : Ngày Sát
                                     chủ âm là ngày kỵ các việc về mai táng, tu sửa mộ phần.
-                                        </td>
-                                    </tr>
-                                    <tr class="good_bad_row">
-                                        <td class="good_bad_column" id="four_left_row">
-                                            <b>Ngũ Hành</b>
-                                        </td>
-                                        <td class="good_bad_column" id="four_right_row">
-                                            Ngày : nhâm thân
-                                            <br>
-                                            tức Chi sinh Can (Kim sinh Thủy), ngày này là ngày cát (nghĩa nhật).
+                                </td>
+                            </tr>
+                            <tr class="good_bad_row">
+                                <td class="good_bad_column" id="four_left_row"><b>Ngũ Hành</b></td>
+                                <td class="good_bad_column" id="four_right_row">
+                                    Ngày : nhâm thân
+                                    <br>tức Chi sinh Can (Kim sinh Thủy), ngày này là ngày cát (nghĩa nhật).
                                     Nạp m: Ngày Kiếm phong Kim kị các tuổi: Bính Dần và Canh Dần.
                                     Ngày này thuộc hành Kim khắc với hành Mộc, ngoại trừ các tuổi: Mậu Tuất vì Kim khắc
                                     mà được lợi.
                                     Ngày Thân lục hợp với Tỵ, tam hợp với Tý và Thìn thành Thủy cục.
                                     | Xung Dần, hình Dần, hình Hợi, hại Hợi, phá Tỵ, tuyệt Mão.
-                                        </td>
-                                    </tr>
-                                    <tr class="good_bad_row">
-                                        <td class="good_bad_column" id="five_left_row">
-                                            <b>Bành Tổ Bách Kị Nhật</b>
-                                        </td>
-                                        <td class="good_bad_column" id="five_right_row">
-                                            - Nhâm : “Bất ương thủy nan canh đê
+                                </td>
+                            </tr>
+                            <tr class="good_bad_row">
+                                <td class="good_bad_column" id="five_left_row"><b>Bành Tổ Bách Kị Nhật</b></td>
+                                <td class="good_bad_column" id="five_right_row">- Nhâm : “Bất ương thủy nan canh đê
                                     phòng” - Không nên tiến hành tháo nước để tránh khó canh phòng
                                     đê điều
-                                            <br>
-                                            - Thân : “Bất an sàng quỷ túy nhập phòng” - Không nên tiến hành kê giường để
+
+                                    <br>- Thân : “Bất an sàng quỷ túy nhập phòng” - Không nên tiến hành kê giường để
                                     tránh quỷ ma vào
                                     phòng
-                                        </td>
-                                    </tr>
-                                    <tr class="good_bad_row">
-                                        <td class="good_bad_column" id="six_left_row">
-                                            <b>Khổng Minh Lục Diệu</b>
-                                        </td>
-                                        <td class="good_bad_column" id="six_right_row">
-                                            Ngày : Đại an
-                                            <br>
-                                            tức ngày Cát, mọi việc đều được yên tâm, hành sự thành công.
-                                            <br>
-                                            <b>Đại An gặp được quí nhân</b>
-                                            <br>
-                                            <b>Có cơm có riệu tiền tiễn đưa</b>
-                                            <br>
-                                            <b>Chẳng thời cũng được Đại An</b>
-                                            <br>
-                                            <b>Bình an vô sự tấm thân thanh nhàn</b>
-                                        </td>
-                                    </tr>
-                                    <tr class="good_bad_row">
-                                        <td class="good_bad_column" id="seven_left_row">
-                                            <b>Nhị Thập Bát Tú Sao khuê</b>
-                                        </td>
-                                        <td class="good_bad_column" id="seven_right_row">
-                                            <b>Tên ngày</b>
-                                            :Khuê mộc Lang - Mã Vũ: Xấu (Bình Tú) Tướng tinh con chó sói, chủ trị
+                                </td>
+                            </tr>
+                            <tr class="good_bad_row">
+                                <td class="good_bad_column" id="six_left_row"><b>Khổng Minh Lục Diệu</b></td>
+                                <td class="good_bad_column" id="six_right_row">
+                                    Ngày : Đại an <br>
+                                    tức ngày Cát, mọi việc đều được yên tâm, hành sự thành công.
+                                    <br><b>Đại An gặp được quí nhân</b>
+                                    <br><b>Có cơm có riệu tiền tiễn đưa</b>
+                                    <br><b>Chẳng thời cũng được Đại An</b>
+                                    <br><b>Bình an vô sự tấm thân thanh nhàn</b>
+                                </td>
+                            </tr>
+                            <tr class="good_bad_row">
+                                <td class="good_bad_column" id="seven_left_row"><b>Nhị Thập Bát Tú Sao khuê</b></td>
+                                <td class="good_bad_column" id="seven_right_row">
+                                    <b>Tên ngày</b>:Khuê mộc Lang - Mã Vũ: Xấu (Bình Tú) Tướng tinh con chó sói, chủ trị
                                     ngày thứ 5.
-                                            <br>
-                                            <b>Nên làm</b>
-                                            :Tốt cho nhập học, cắt áo, tạo dựng nhà phòng hay ra đi cầu công
-                                    danh.
-                                            <br>
-                                            <b>Kiêng cữ</b>
-                                            : Chôn cất, trổ cửa dựng cửa, khai thông đường nước, việc khai
+                                    <br>
+                                    <b>Nên làm </b>:Tốt cho nhập học, cắt áo, tạo dựng nhà phòng hay ra đi cầu công
+                                    danh. <br>
+                                    <b>Kiêng cữ</b>: Chôn cất, trổ cửa dựng cửa, khai thông đường nước, việc khai
                                     trương, đào ao móc
                                     giếng, các vụ thưa kiện và đóng giường lót giường. Vì vậy, nếu quý bạn có ý định
                                     chôn cất người chết
-                                    hay khai trường lập nghiệp thì nên chọn một ngày khác để tiến hành
-                                            <br>
-                                            <b>Ngoại lệ</b>
-                                            :
-                                            <br>
-                                            - Sao Khuê là một trong Thất Sát Tinh, nếu đẻ con nhằm ngày này thì nên lấy tên của
+                                    hay khai trường lập nghiệp thì nên chọn một ngày khác để tiến hành <br>
+                                    <b>Ngoại lệ</b>: <br>
+                                    - Sao Khuê là một trong Thất Sát Tinh, nếu đẻ con nhằm ngày này thì nên lấy tên của
                                     Sao Khuê cũng có
-                                    thể lấy tên Sao của năm hay tháng mà đặt cho con dễ nuôi hơn.
-                                            <br>
-                                            - Sao Khuê Hãm Địa tại Thân nên Văn Khoa thất bại. Tại Ngọ thì chỗ Tuyệt gặp Sanh
+                                    thể lấy tên Sao của năm hay tháng mà đặt cho con dễ nuôi hơn. <br>
+                                    - Sao Khuê Hãm Địa tại Thân nên Văn Khoa thất bại. Tại Ngọ thì chỗ Tuyệt gặp Sanh
                                     đắc lợi mưu sự,
-                                    nhất là gặp Canh Ngọ. Tại Thìn thì tốt vừa vừa.
-                                            <br>
-                                            - Ngày Thân Sao Khuê Đăng Viên tức Tiến thân danh.
-                                            <br>
-                                            - Khuê: mộc lang (con sói): Mộc tinh, sao xấu. Khắc kỵ động thổ, an táng, khai
+                                    nhất là gặp Canh Ngọ. Tại Thìn thì tốt vừa vừa. <br>
+                                    - Ngày Thân Sao Khuê Đăng Viên tức Tiến thân danh. <br>
+                                    - Khuê: mộc lang (con sói): Mộc tinh, sao xấu. Khắc kỵ động thổ, an táng, khai
                                     trương cũng như sửa
-                                    cửa.
-                                            <br>
-                                            - Ngày Thân Sao Khuê Đăng Viên tức Tiến thân danh.
-                                            <br>
-                                            - Khuê: mộc lang (con sói): Mộc tinh, sao xấu. Khắc kỵ động thổ, an táng, khai
+                                    cửa. <br>
+                                    - Ngày Thân Sao Khuê Đăng Viên tức Tiến thân danh. <br>
+                                    - Khuê: mộc lang (con sói): Mộc tinh, sao xấu. Khắc kỵ động thổ, an táng, khai
                                     trương cũng như sửa
-                                    cửa.
-                                            <br>
-                                            <br>
-                                            Khuê tinh tạo tác đắc trinh tường,
-                                            <br>
-                                            Gia hạ vinh hòa đại cát xương,
-                                            <br>
-                                            Nhược thị táng mai âm tốt tử,
-                                            <br>
-                                            Đương niên định chủ lưỡng tam tang.
-                                            <br>
-                                            Khán khán vận kim, hình thương đáo,
-                                            <br>
-                                            Trùng trùng quan sự, chủ ôn hoàng.
-                                            <br>
-                                            Khai môn phóng thủy chiêu tai họa,
-                                            <br>
-                                            Tam niên lưỡng thứ tổn nhi lang.
-                                        </td>
-                                    </tr>
-                                    <tr class="good_bad_row">
-                                        <td class="good_bad_column" id="eight_left_row">
-                                            <b>Thập Nhị Kiến Trừ TRỰC TRỪ</b>
-                                        </td>
-                                        <td class="good_bad_column" id="eight_right_row">
-                                            Động đất, ban nền đắp nền, thờ cúng Táo Thần, cầu thầy chữa bệnh bằng cách mổ xẻ hay
+                                    cửa. <br><br>
+                                    Khuê tinh tạo tác đắc trinh tường, <br>
+                                    Gia hạ vinh hòa đại cát xương, <br>
+                                    Nhược thị táng mai âm tốt tử, <br>
+                                    Đương niên định chủ lưỡng tam tang. <br>
+                                    Khán khán vận kim, hình thương đáo, <br>
+                                    Trùng trùng quan sự, chủ ôn hoàng. <br>
+                                    Khai môn phóng thủy chiêu tai họa, <br>
+                                    Tam niên lưỡng thứ tổn nhi lang.
+                                </td>
+                            </tr>
+                            <tr class="good_bad_row">
+                                <td class="good_bad_column" id="eight_left_row"><b>Thập Nhị Kiến Trừ TRỰC TRỪ</b></td>
+                                <td class="good_bad_column" id="eight_right_row">
+                                    Động đất, ban nền đắp nền, thờ cúng Táo Thần, cầu thầy chữa bệnh bằng cách mổ xẻ hay
                                     châm cứu, bốc
                                     thuốc, xả tang, khởi công làm lò nhuộm lò gốm, nữ nhân khởi đầu uống thuốc chữa
-                                    bệnh.
-                                            <br>
-                                            Đẻ con nhằm ngày này khó nuôi, nên làm Âm Đức cho con, nam nhân kỵ khởi đầu uống
-                                    thuốc.
-                                            <br>
-                                        </td>
-                                    </tr>
-                                    <tr class="good_bad_row">
-                                        <td class="good_bad_column" id="nine_left_row">
-                                            <b>Ngọc Hạp Thông Thư</b>
-                                        </td>
-                                        <td class="good_bad_column" id="nine_right_row">
-                                            <div class="NHTT d-flex">
-                                                <p>
-                                                    <b>Sao tốt</b>
-                                                    <br>
-                                                    Thanh Long Hoàng Đạo: Tốt cho mọi việc Thiên phú (trực mãn): Tốt cho mọi
+                                    bệnh. <br>
+                                    Đẻ con nhằm ngày này khó nuôi, nên làm Âm Đức cho con, nam nhân kỵ khởi đầu uống
+                                    thuốc. <br>
+                                </td>
+                            </tr>
+                            <tr class="good_bad_row">
+                                <td class="good_bad_column" id="nine_left_row"><b>Ngọc Hạp Thông Thư</b></td>
+                                <td class="good_bad_column" id="nine_right_row">
+                                    <div class="NHTT d-flex">
+                                        <p><b>Sao tốt</b><br>
+                                            Thanh Long Hoàng Đạo: Tốt cho mọi việc Thiên phú (trực mãn): Tốt cho mọi
                                             việc, nhất là khai
                                             trương, việc xây dựng nhà cửa và an táng. Lộc khố: Tốt cho việc khai trương,
                                             kinh doanh, cầu
                                             tài, giao dịch Dịch Mã: Tốt cho mọi việc, nhất là việc xuất hành Sao Nguyệt
                                             Không: tốt cho
                                             việc sửa nhà, đặt giường
-                                                </p>
-                                                <p>
-                                                    <b>Sao xấu</b>
-                                                    <br>
-                                                    Thổ ôn (thiên cẩu): Kỵ việc xây dựng, xấu về tế tự (cúng bái), đào ao, đào
+                                        </p>
+                                        <p><b>Sao xấu</b><br>
+                                            Thổ ôn (thiên cẩu): Kỵ việc xây dựng, xấu về tế tự (cúng bái), đào ao, đào
                                             giếng Hoang vu:
                                             Xấu cho mọi việc Cửu không: Kỵ việc xuất hành, kinh doanh, cầu tài, khai
                                             trương Sát chủ: Xấu
                                             cho mọi việc Tội chỉ: Xấu với việc cúng bái, tế tự, kiện cáo
-                                                </p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="good_bad_row">
-                                        <td class="good_bad_column" id="ten_left_row">
-                                            <b>Hướng xuất hành</b>
-                                        </td>
-                                        <td class="good_bad_column" id="ten_right_row">
-                                            Xuất hành hướng Chính Nam để đón 'Hỷ Thần'. Xuất hành hướng Chính Tây để đón 'Tài
-                                    Thần'.
-                                            <br>
-                                            Tránh xuất hành hướng Tây Nam gặp Hạc Thần (xấu)
-                                            <br>
-                                        </td>
-                                    </tr>
-                                    <tr class="good_bad_row">
-                                        <td class="good_bad_column" id="eleven_left_row">
-                                            <b>
-                                                Giờ xuất hành Theo Lý Thuần
-                                    Phong
-                                            </b>
-                                        </td>
-                                        <td class="good_bad_column" id="eleven_right_row">
-                                            <b>Từ 11h-13h (Ngọ) và từ 23h-01h (Tý)</b>
-                                            Mọi công việc đều được tốt lành, tốt nhất cầu tài đi theo hướng Tây Nam – Nhà cửa
+                                        </p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="good_bad_row">
+                                <td class="good_bad_column" id="ten_left_row"><b>Hướng xuất hành</b></td>
+                                <td class="good_bad_column" id="ten_right_row">
+                                    Xuất hành hướng Chính Nam để đón 'Hỷ Thần'. Xuất hành hướng Chính Tây để đón 'Tài
+                                    Thần'. <br>
+                                    Tránh xuất hành hướng Tây Nam gặp Hạc Thần (xấu) <br>
+                                </td>
+                            </tr>
+                            <tr class="good_bad_row">
+                                <td class="good_bad_column" id="eleven_left_row"><b>Giờ xuất hành Theo Lý Thuần
+                                    Phong</b></td>
+                                <td class="good_bad_column" id="eleven_right_row">
+                                    <b>Từ 11h-13h (Ngọ) và từ 23h-01h (Tý)</b>
+                                    Mọi công việc đều được tốt lành, tốt nhất cầu tài đi theo hướng Tây Nam – Nhà cửa
                                     được yên lành.
                                     Người xuất hành thì đều bình yên.
-                                            <br>
-                                            <b>Từ 13h-15h (Mùi) và từ 01-03h (Sửu)</b>
-                                            Mưu sự khó thành, cầu lộc, cầu tài mờ mịt. Kiện cáo tốt nhất nên hoãn lại. Người đi
+                                    <br>
+                                    <b>Từ 13h-15h (Mùi) và từ 01-03h (Sửu) </b>
+                                    Mưu sự khó thành, cầu lộc, cầu tài mờ mịt. Kiện cáo tốt nhất nên hoãn lại. Người đi
                                     xa chưa có tin
                                     về. Mất tiền, mất của nếu đi hướng Nam thì tìm nhanh mới thấy. Đề phòng tranh cãi,
                                     mâu thuẫn hay
                                     miệng tiếng tầm thường. Việc làm chậm, lâu la nhưng tốt nhất làm việc gì đều cần
                                     chắc chắn.
-                                            <br>
-                                            <b>Từ 15h-17h (Thân) và từ 03h-05h (Dần)</b>
-                                            Tin vui sắp tới, nếu cầu lộc, cầu tài thì đi hướng Nam. Đi công việc gặp gỡ có nhiều
+                                    <br>
+                                    <b>Từ 15h-17h (Thân) và từ 03h-05h (Dần)</b>
+                                    Tin vui sắp tới, nếu cầu lộc, cầu tài thì đi hướng Nam. Đi công việc gặp gỡ có nhiều
                                     may mắn. Người
                                     đi có tin về. Nếu chăn nuôi đều gặp thuận lợi.
-                                            <br>
-                                            <b>Từ 17h-19h (Dậu) và từ 05h-07h (Mão)</b>
-                                            Hay tranh luận, cãi cọ, gây chuyện đói kém, phải đề phòng. Người ra đi tốt nhất nên
+                                    <br>
+                                    <b>Từ 17h-19h (Dậu) và từ 05h-07h (Mão) </b>
+                                    Hay tranh luận, cãi cọ, gây chuyện đói kém, phải đề phòng. Người ra đi tốt nhất nên
                                     hoãn lại. Phòng
                                     người người nguyền rủa, tránh lây bệnh. Nói chung những việc như hội họp, tranh
                                     luận, việc quan,…nên
                                     tránh đi vào giờ này. Nếu bắt buộc phải đi vào giờ này thì nên giữ miệng để hạn ché
                                     gây ẩu đả hay
                                     cãi nhau.
-                                            <br>
-                                            <b>Từ 19h-21h (Tuất) và từ 07h-09h (Thìn)</b>
-                                            Là giờ rất tốt lành, nếu đi thường gặp được may mắn. Buôn bán, kinh doanh có lời.
+                                    <br>
+                                    <b>Từ 19h-21h (Tuất) và từ 07h-09h (Thìn) </b>
+                                    Là giờ rất tốt lành, nếu đi thường gặp được may mắn. Buôn bán, kinh doanh có lời.
                                     Người đi sắp về
                                     nhà. Phụ nữ có tin mừng. Mọi việc trong nhà đều hòa hợp. Nếu có bệnh cầu thì sẽ
                                     khỏi, gia đình đều
                                     mạnh khỏe.
-                                            <br>
-                                            <b>Từ 21h-23h (Hợi) và từ 09h-11h (Tị)</b>
-                                            Cầu tài thì không có lợi, hoặc hay bị trái ý. Nếu ra đi hay thiệt, gặp nạn, việc
+                                    <br>
+                                    <b>Từ 21h-23h (Hợi) và từ 09h-11h (Tị) </b>
+                                    Cầu tài thì không có lợi, hoặc hay bị trái ý. Nếu ra đi hay thiệt, gặp nạn, việc
                                     quan trọng thì phải
                                     đòn, gặp ma quỷ nên cúng tế thì mới an.
-                                            <br>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <h2 style="font-size: 20px;">
-                                    <b>Nguồn gốc lịch âm</b>
-                                </h2>
-                                <p>
-                                    Lịch âm hay còn gọi là lịch vạn niên là loại lịch dựa trên các chu kỳ của tuần trăng. Loại
+                                    <br>
+                                </td>
+                            </tr>
+                        </table>
+                        <h2 style="font-size: 20px;"><b>Nguồn gốc lịch âm</b></h2>
+                        <p>
+                            Lịch âm hay còn gọi là lịch vạn niên là loại lịch dựa trên các chu kỳ của tuần trăng. Loại
                             lịch duy nhất.
                             Trên thực tế lịch âm là lịch của hồi giáo, trong đó mỗi năm chỉ chứa đúng 12 tháng Mặt
                             Trăng. Đặc trưng của
@@ -864,9 +570,9 @@
                             giáo được sử dụng chủ yếu cho các mục đích tín ngưỡng tôn giáo. Tại Ả Rập Saudi lịch cũng
                             được sử dụng cho
                             các mục đích thương mại.
-                                </p>
-                                <p>
-                                    Phần lớn các loại lịch khác, dù được gọi là "âm lịch" hay lịch vạn niên, trên thực tế chính
+                        </p>
+                        <p>
+                            Phần lớn các loại lịch khác, dù được gọi là "âm lịch" hay lịch vạn niên, trên thực tế chính
                             là âm dương
                             lịch. Điều này có nghĩa là trong các loại lịch đó, các tháng được duy trì theo chu kỳ của
                             Mặt Trăng, nhưng
@@ -882,17 +588,15 @@
                             toàn trùng với Xuân
                             tiết của người Trung Quốc và các quốc gia chịu ảnh hưởng bởi văn hóa Trung Hoa và vòng Văn
                             hóa chữ Hán khác.
-                                </p>
-                                <p>
-                                    Do lịch âm thuần túy chỉ có 12 tháng âm lịch (tháng giao hội) trong mỗi năm, nên chu kỳ này
+                        </p>
+                        <p>
+                            Do lịch âm thuần túy chỉ có 12 tháng âm lịch (tháng giao hội) trong mỗi năm, nên chu kỳ này
                             (354,367 ngày)
                             đôi khi cũng được gọi là năm âm lịch.
-                                </p>
-                                <h2 style="font-size: 20px;">
-                                    <b>Âm dương lịch</b>
-                                </h2>
-                                <p>
-                                    Âm dương lịch là loại lịch được nhiều nền văn hóa sử dụng, trong đó ngày tháng của lịch chỉ
+                        </p>
+                        <h2 style="font-size: 20px;"><b>Âm dương lịch</b></h2>
+                        <p>
+                            Âm dương lịch là loại lịch được nhiều nền văn hóa sử dụng, trong đó ngày tháng của lịch chỉ
                             ra cả pha Mặt
                             Trăng (hay tuần trăng) và thời gian của năm Mặt Trời (dương lịch). Nếu năm Mặt Trời được
                             định nghĩa như là
@@ -903,227 +607,96 @@
                             một năm chỉ chứa một số tự nhiên các tháng, trong phần lớn các năm là 12 tháng nhưng cứ sau
                             mỗi 2 (hay 3)
                             năm lại có một năm với 13 tháng.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div id="sidebar" class="pt-3"></div>
-                        </div>
+                        </p>
                     </div>
                 </div>
-            </section>
-            <section title="minh">
-                <div class="container mt-5 mb-5">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="news__title mb-3">Tin tức khác</div>
-                            <div id="slide" class="carousel slide" data-bs-ride="carousel">
-                                <!-- The slideshow/carousel -->
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <div class="group-item-slider row">
-                                            <div class="slider-item card col-md-4">
-                                                <a href="#">
-                                                    <div class="img-thumb">
-                                                        <img class="image-hover" src="../image/tu-vi-tuoi-mao-2023.png" loading="lazy">
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <div class="card-title">Tử vi tuổi Mão năm 2023: Sự nghiệp - Tình duyên - Gia đạo</div>
-                                                    </div>
-                                                    <div class="card-date">Thứ năm 29/12/2022</div>
-                                                </a>
-                                            </div>
-                                            <div class="slider-item card col-md-4">
-                                                <a href="#">
-                                                    <div class="img-thumb">
-                                                        <img class="image-hover" src="../image/tu-vi-tuoi-tuat-2023.png" loading="lazy">
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <div class="card-title">Tử vi tuổi Tuất năm 2023: Sự nghiệp - Tình duyên - Gia đạo</div>
-                                                    </div>
-                                                    <div class="card-date">Thứ năm 29/12/2022</div>
-                                                </a>
-                                            </div>
-                                            <div class="slider-item card col-md-4">
-                                                <a href="#">
-                                                    <div class="img-thumb">
-                                                        <img class="image-hover" src="../image/tu-vi-tuoi-hoi-2023.png" loading="lazy">
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <div class="card-title">Tử vi tuổi Hợi năm 2023: Sự nghiệp - Tình duyên - Gia đạo</div>
-                                                    </div>
-                                                    <div class="card-date">Thứ năm 29/12/2022</div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="group-item-slider row">
-                                            <div class="slider-item card col-md-4">
-                                                <a href="#">
-                                                    <div class="img-thumb">
-                                                        <img class="image-hover" src="../image/tu-vi-12-con-giap-2023.png" loading="lazy">
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <div class="card-title">Tử vi 12 con giáp trong năm Quý Mão 2023 chi tiết</div>
-                                                    </div>
-                                                    <div class="card-date">Thứ tư 11/01/2023</div>
-                                                </a>
-                                            </div>
-                                            <div class="slider-item card col-md-4">
-                                                <a href="#">
-                                                    <div class="img-thumb">
-                                                        <img class="image-hover" src="../image/tu-vi-tuoi-dau-2023.png" loading="lazy">
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <div class="card-title">Tử vi tuổi Dậu năm 2023: Sự nghiệp - Tình duyên - Gia đạo</div>
-                                                    </div>
-                                                    <div class="card-date">Thứ năm 29/12/2022</div>
-                                                </a>
-                                            </div>
-                                            <div class="slider-item card col-md-4">
-                                                <a href="#">
-                                                    <div class="img-thumb">
-                                                        <img class="image-hover" src="../image/tu-vi-tuoi-ngo-2023.png" loading="lazy">
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <div class="card-title">Tử vi tuổi Ngọ năm 2023: Sự nghiệp - Tình duyên - Gia đạo</div>
-                                                    </div>
-                                                    <div class="card-date">Thứ năm 29/12/2022</div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--Footer-->
-            <div title=" footer tuấn anh" class="contaniner__footer container">
-                <footer class="footer">
-                    <div class="footer__row">
-                        <div class="footer__row__col3">
-                            <h5>LỊCH ÂM</h5>
-                            <hr>
-                            <ul class="footer__menu">
-                                <li>
-                                    <a href="">Âm lịch hôm nay</a>
-                                </li>
-                                <li>
-                                    <a href="">Đổi ngày âm dương</a>
-                                </li>
-                                <li>
-                                    <a href="">Tết nguyên đán</a>
-                                </li>
-                                <li>
-                                    <a href="">Lịch âm 2023</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer__row__col3">
-                            <h5>XEM BÓI</h5>
-                            <hr>
-                            <ul class="footer__menu">
-                                <li>
-                                    <a href="">Lịch vạn niên</a>
-                                </li>
-                                <li>
-                                    <a href="">Lịch vạn niên 2021</a>
-                                </li>
-                                <li>
-                                    <a href="">Lịch vạn niên 2023</a>
-                                </li>
-                                <li>
-                                    <a href="">Lịch âm</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer__row__col3">
-                            <h5>TIỆN ÍCH ONLINE</h5>
-                            <hr>
-                            <ul class="footer__menu">
-                                <li>
-                                    <a href="">Thông tin công ty</a>
-                                </li>
-                                <li>
-                                    <a href="">Chuyển đổi tiếng việt mới</a>
-                                </li>
-                                <li>
-                                    <a href="">Lãi xuất ngân hàng</a>
-                                </li>
-                                <li>
-                                    <a href="">Kết quả sổ xố hôm nay</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer__row__col3">
-                            <h5>VỀ CHÚNG TÔI</h5>
-                            <hr>
-                            <ul class="footer__menu">
-                                <li>
-                                    <a href="">Contact</a>
-                                </li>
-                                <li>
-                                    <a href="">Privacy policy</a>
-                                </li>
-                                <li>
-                                    <a href="">Tems and conditions</a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <img src="../image/dmca_protected_sml_120m.png" alt="">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="footer__row">
-                        <div class="row__col7">
-                            <p>
-                                XEM LỊCH ÂM là trang cung cấp thông tin về lịch âm, lịch vạn
-                        niên, chính xác nhất và miễn phí cho người Việt Nam. Mọi ý kiến
-                        đóng góp xin vui lòng liên hệ
-                                <a href="">tại đây!</a>
-                            </p>
-                        </div>
-                        <div class="row__col3">
-                            <ul class="list__inline">
-                                <li>
-                                    <a href="">
-                                        <i class="fa-brands fa-facebook-f"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <i class="fa-brands fa-google"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <i class="fa-brands fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <i class="fa-brands fa-pinterest-p"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </footer>
+                <div class="col-lg-4">Minh code đây</div>
             </div>
-        </main>
-    </body>
-</footer>
-</div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <div title=" footer tuấn anh" class="contaniner__footer container">
+        <footer class="footer">
+            <div class="footer__row">
+                <div class="footer__row__col3">
+                    <h5>LỊCH ÂM</h5>
+                    <hr/>
+                    <ul class="footer__menu">
+                        <li><a href="">Âm lịch hôm nay</a></li>
+                        <li><a href="">Đổi ngày âm dương</a></li>
+                        <li><a href="">Tết nguyên đán</a></li>
+                        <li><a href="">Lịch âm 2023</a></li>
+                    </ul>
+                </div>
+                <div class="footer__row__col3">
+                    <h5>XEM BÓI</h5>
+                    <hr/>
+                    <ul class="footer__menu">
+                        <li><a href="">Lịch vạn niên</a></li>
+                        <li><a href="">Lịch vạn niên 2021</a></li>
+                        <li><a href="">Lịch vạn niên 2023</a></li>
+                        <li><a href="">Lịch âm</a></li>
+                    </ul>
+                </div>
+                <div class="footer__row__col3">
+                    <h5>TIỆN ÍCH ONLINE</h5>
+                    <hr/>
+                    <ul class="footer__menu">
+                        <li><a href="">Thông tin công ty</a></li>
+                        <li><a href="">Chuyển đổi tiếng việt mới</a></li>
+                        <li><a href="">Lãi xuất ngân hàng</a></li>
+                        <li><a href="">Kết quả sổ xố hôm nay</a></li>
+                    </ul>
+                </div>
+                <div class="footer__row__col3">
+                    <h5>VỀ CHÚNG TÔI</h5>
+                    <hr/>
+                    <ul class="footer__menu">
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Privacy policy</a></li>
+                        <li><a href="">Tems and conditions</a></li>
+                        <li>
+                            <a href=""
+                            ><img
+                                    src="../image/dmca_protected_sml_120m.png"
+                                    alt=""
+                            /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr/>
+            <div class="footer__row">
+                <div class="row__col7">
+                    <p>
+                        XEM LỊCH ÂM là trang cung cấp thông tin về lịch âm, lịch vạn
+                        niên, chính xác nhất và miễn phí cho người Việt Nam. Mọi ý kiến
+                        đóng góp xin vui lòng liên hệ <a href="">tại đây!</a>
+                    </p>
+                </div>
+                <div class="row__col3">
+                    <ul class="list__inline">
+                        <li>
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-google"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
 </main>
 </body>
 <script src="../javascript/dayTime.js"></script>
 <script src="../javascript/calendar.js"></script>
-<script type="module" src="../javascript/baner_ad_post_obj.js"></script>
-<script type="module" src="../javascript/baner_ad_post.js"></script>
+<script src="../javascript/toggle.js"></script>
 </html>

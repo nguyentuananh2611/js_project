@@ -258,5 +258,9 @@
   .active{
     display: block !important;
   }
+
+  .background__color{
+    background-color: #ddd;
+  }
   
   
