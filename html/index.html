@@ -50,24 +50,24 @@
                         <li><a href="#">LỊCH ÂM HÔM NAY</a></li>
                         <li><a href="#">ĐỔI NGÀY ÂM DƯƠNG</a></li>
                         <li class="dropdown">
-                            <a href="#">LỊCH THÁNG</a>
+                            <a href="#" onclick="toggleMenu(this)">LỊCH THÁNG</a>
                             <ul class="dropdown__menu" style="display: none">
-                                <li><a href="#">LỊCH ÂM THÁNG 1</a></li>
-                                <li><a href="#">LỊCH ÂM THÁNG 2</a></li>
-                                <li><a href="#">LỊCH ÂM THÁNG 3</a></li>
-                                <li><a href="#">LỊCH ÂM THÁNG 4</a></li>
-                                <li><a href="#">LỊCH ÂM THÁNG 5</a></li>
-                                <li><a href="#">LỊCH ÂM THÁNG 6</a></li>
-                                <li><a href="#">LỊCH ÂM THÁNG 7</a></li>
-                                <li><a href="#">LỊCH ÂM THÁNG 8</a></li>
-                                <li><a href="#">LỊCH ÂM THÁNG 9</a></li>
-                                <li><a href="#">LỊCH ÂM THÁNG 10</a></li>
-                                <li><a href="#">LỊCH ÂM THÁNG 11</a></li>
-                                <li><a href="#">LỊCH ÂM THÁNG 12</a></li>
+                                <li><a href="#" id="1" onclick="renderTable(this)">LỊCH ÂM THÁNG 1</a></li>
+                                <li><a href="#" id="2" onclick="renderTable(this)">LỊCH ÂM THÁNG 2</a></li>
+                                <li><a href="#" id="3" onclick="renderTable(this)">LỊCH ÂM THÁNG 3</a></li>
+                                <li><a href="#" id="4" onclick="renderTable(this)">LỊCH ÂM THÁNG 4</a></li>
+                                <li><a href="#" id="5" onclick="renderTable(this)">LỊCH ÂM THÁNG 5</a></li>
+                                <li><a href="#" id="6" onclick="renderTable(this)">LỊCH ÂM THÁNG 6</a></li>
+                                <li><a href="#" id="7" onclick="renderTable(this)">LỊCH ÂM THÁNG 7</a></li>
+                                <li><a href="#" id="8" onclick="renderTable(this)">LỊCH ÂM THÁNG 8</a></li>
+                                <li><a href="#" id="9" onclick="renderTable(this)">LỊCH ÂM THÁNG 9</a></li>
+                                <li><a href="#" id="10" onclick="renderTable(this)">LỊCH ÂM THÁNG 10</a></li>
+                                <li><a href="#" id="11" onclick="renderTable(this)">LỊCH ÂM THÁNG 11</a></li>
+                                <li><a href="#" id="12" onclick="renderTable(this)">LỊCH ÂM THÁNG 12</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="#">LỊCH NĂM</a>
+                            <a href="#" onclick="toggleMenu(this)">LỊCH NĂM</a>
                             <ul class="dropdown__menu" style="display: none">
                                 <li><a href="#">LỊCH ÂM 2015</a></li>
                                 <li><a href="#">LỊCH ÂM 2016</a></li>
@@ -698,4 +698,5 @@
 </body>
 <script src="../javascript/dayTime.js"></script>
 <script src="../javascript/calendar.js"></script>
+<script src="../javascript/toggle.js"></script>
 </html>

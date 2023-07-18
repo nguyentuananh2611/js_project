@@ -4,6 +4,7 @@ let year = date.getFullYear(); // Lấy năm hiện tại
 let month = date.getMonth(); // Lấy tháng hiện tại (0 - 11)
 
 const day = document.querySelector(".calendar-dates");
+console.log(day);
 const currdate = document.querySelector(".vncal-header-title h4");
 const titleLichAm = document.querySelector(".vncal-days .titleAm");
 const monthAmBox = document.querySelectorAll(".chitiet p b");
@@ -24,7 +25,7 @@ const months = [
     "Tháng 12"
 ];
 
-const manipulate = () => {
+const manipulate = (month) => {
     // Lấy ngày đầu tiên của tháng
     let dayone = new Date(year, month, 1).getDay();
 
@@ -564,7 +565,7 @@ DayChi=(dd,mm,yy)=>{
     return chi;
 }
 
-manipulate();
+manipulate(month);
 
 // gán sự kiện nút next, prev
 prenexIcons.forEach(icon=> {
@@ -589,7 +590,7 @@ prenexIcons.forEach(icon=> {
             date=new Date();
         }
 
-        manipulate();
+        manipulate(month);
 
         // Gắn lại sự kiện click vào các phần tử <td>
         addClickEventToTDs();
@@ -744,6 +745,11 @@ function addClickEventToTDs() {
             dateDetail(data);
         });
     });
+}
+
+function renderTable(e) {
+   month = e.id - 1;
+   manipulate(month);
 }
 
 

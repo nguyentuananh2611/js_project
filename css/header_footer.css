@@ -254,5 +254,9 @@
       padding: 0 15px;
     }
   }
+
+  .active{
+    display: block !important;
+  }
   
   
