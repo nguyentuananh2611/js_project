@@ -50,6 +50,7 @@ a {
 .sidebar_content_intro {
     background-color: #fff;
     position: relative;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);   
 
 }
 
@@ -65,7 +66,7 @@ a {
 }
 
 .sidebar_content:hover .sidebar_thumbnail, .sidebar_content_intro:hover {
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 5 px 8px rgba(0, 0, 0, 0.4);
 }
 
 .sidebar_content:hover .sidebar_thumbnail_img, .sidebar_content_intro:hover .sidebar_content_intro_img {
