@@ -5,6 +5,7 @@
     list-style: none;
     text-decoration: none;
     font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
   }
   
   a {
@@ -253,6 +254,14 @@
       width: 70%;
       padding: 0 15px;
     }
+  }
+
+  .active{
+    display: block !important;
+  }
+
+  .background__color{
+    background-color: #ddd;
   }
   
   
