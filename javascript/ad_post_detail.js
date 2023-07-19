@@ -351,17 +351,6 @@ const fn_loadSidebar = () => {
   sidebar.innerHTML = sidebarHtml;
 };
 
-const fn_clickCloseBanner = () => {
-  const iconDelete = document.getElementsByClassName("banner_ad_close");
-  console.log(iconDelete);
-  let lengCloseIcon = iconDelete.length;
-  for (let i = 0; i < lengCloseIcon; i++) {
-    iconDelete[i].addEventListener("click", (e) => {
-      const slide = document.getElementById("slide");
-      slide.classList.add("hidden");
-    });
-  }
-};
 
 const fn_load_content = () => {
   let lengDetail = LUNAR_CALENDAR_POST_DETAILS.length;
