@@ -1,0 +1,261 @@
+.switch_lunar_solar_display{
+    padding: 6px 12px; 
+    border-radius: 4px;
+    border: 1px solid#eee;
+}
+
+.switch_lunar_solar_btn{
+    padding: 6px 12px; 
+    color: white; 
+    background-color: #006e33; 
+    border-radius: 4px;
+    border: none;
+}
+
+.switch_solar_calendar_date{
+    border: 1px solid #bcccc3;
+    border-radius: 4px;
+    color: #FF8700;
+    margin-left: 5px;
+    padding: 4px 6px;
+    font-size: 20px;
+}
+
+.switch_lunar_calendar_date{
+    border: 1px solid #bcccc3;
+    border-radius: 4px;
+    color: #0B730B;
+    margin-left: 5px;
+    padding: 4px 6px;
+    font-size: 20px;
+}
+
+.switch_lunar_calendar_table_item{
+    border: 1px solid #0B730B;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/*fbdfbdfbdf*/
+.vncal-header {
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    min-height: 46px;
+    background: #006e33;
+    margin-top: 0;
+    border-bottom: 1px solid #519038;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+.vncal-header-titles {
+    width: 100%;
+}
+
+.vncal-header-titles a h2, .vncal-header-titles a h3, .vncal-header-titles a h4, .vncal-header-titles h2, .vncal-header-titles h3, .vncal-header-titles h4 {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    padding: 14px 0 4px 0 !important;
+}
+
+.vncal-days {
+    width: 100%;
+    background: #5CB85C;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+.vncal-days thead tr th {
+    width: 50%;
+    text-align: center;
+    line-height: 18px;
+    font-size: 13px;
+    color: white;
+    padding: 6px;
+    border-left: 1px solid #0B730B;
+    border-right: 1px solid #4E913D;
+    border-bottom: 1px solid #448D35;
+    background: #0B730B;
+}
+
+.vncal-days tbody tr td {
+    font-family: Roboto,Arial;
+    padding: 8px;
+    border: 1px solid #0B730B;
+    background: white;
+    text-align: center;
+}
+
+.vncal-days tbody tr td div.duong {
+    font-size: 100px;
+    font-weight: bold;
+    color: #FF8700;
+    width: 100%;
+    float: left;
+    height: 185px;
+    padding-top: 50px;
+}
+
+.vncal-days tbody tr td div.chitiet {
+    height: 80px;
+    float: left;
+    width: 100%;
+}
+
+.vncal-days tbody tr td div.am {
+    font-size: 100px;
+    font-weight: bold;
+    color: #0B730B;
+    width: 100%;
+    float: left;
+    height: 185px;
+    padding-top: 50px;
+}
+
+.vncal-days tbody tr td div.chitiet p {
+    text-align: center;
+    font-size: 13px;
+}
+
+.vncal-days tbody tr td.tot {
+    color: white;
+    font-weight: bold;
+    background: #006e33;
+    border-bottom: 1px solid #006e33;
+}
+
+/*calendar*/
+
+a.red-link {
+    color: red;
+    font-weight: bold;
+}
+
+a.violet-link {
+    color: #95149a;
+    font-weight: bold;
+}
+
+.vncal-header-preview, .vncal-header-next {
+    width: 10%;
+    font-size: 20px;
+    padding: 12px 0 2px 0;
+    float: left;
+    cursor: pointer;
+}
+
+.vncal-header-preview a, .vncal-header-next a {
+    color: #fff;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.vncal-header-title {
+    width: 80%;
+    float: left;
+}
+
+.vncal-header-title h2, .vncal-header-title h3, .vncal-header-title h4 {
+    color: white !important;
+    font-size: 18px !important;
+    font-weight: bold;
+    margin: 0;
+    padding: 14px 0 4px 0;
+    text-align: center;
+}
+
+.vncal {
+    width: 100%;
+    background: #5CB85C;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+.vncal thead tr th {
+    width: 14%;
+    text-align: center;
+    line-height: 18px;
+    font-size: 13px;
+    color: white;
+    padding: 6px;
+    border-left: 1px solid #0B730B;
+    border-right: 1px solid #4E913D;
+    border-bottom: 1px solid #448D35;
+    background: #117b11;
+}
+
+.vncal tbody tr td {
+    font-family: Roboto,Arial;
+    padding: 20px;
+    border: 1px solid #0B730B;
+    cursor: pointer;
+    background: white;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.vncal tbody tr td:hover {
+    background-color: #C9FFC4;
+}
+
+.vncal tbody tr td.skip {
+    background-color: #5CB85C;
+    cursor: default;
+}
+
+.vncal tbody tr td a {
+    text-decoration: none;
+    color: #000;
+}
+
+.vncal tbody tr td a div.dao {
+    color: white;
+    font-size: 15px;
+    float: right;
+    width: 10%;
+}
+
+.vncal tbody tr td a div.xau {
+    color: #95149A;
+}
+
+.vncal tbody tr td a div.tot {
+    color: red;
+}
+
+.vncal tbody tr td.current {
+    background-color: #8EFF7E;
+}
+
+.vncal tbody tr td a div.sat {
+    color: #1EA21E;
+}
+
+.vncal tbody tr td a div.sun {
+    color: #FF6000;
+}
+
+.vncal tbody tr td a div.duong {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    float: left;
+    width: 90%;
+}
+
+.vncal tbody tr td a div.am {
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    float: right;
+    width: 100%;
+}
+
+.am, .amChiTiet {
+    display: inline-block;
+}

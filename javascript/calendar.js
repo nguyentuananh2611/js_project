@@ -1,11 +1,9 @@
 //Ren bảng date
 let date = new Date(); // Lấy ngày giờ hiện tại
 let year = date.getFullYear(); // Lấy năm hiện tại
-
 let month = date.getMonth(); // Lấy tháng hiện tại (0 - 11)
 
 const day = document.querySelector(".calendar-dates");
-
 const currdate = document.querySelector(".vncal-header-title h4");
 const titleLichAm = document.querySelector(".vncal-days .titleAm");
 const monthAmBox = document.querySelectorAll(".chitiet p b");
@@ -25,6 +23,7 @@ const months = [
   "Tháng 11",
   "Tháng 12",
 ];
+
 
 const manipulate = (year, month) => {
   // Lấy ngày đầu tiên của tháng
@@ -77,10 +76,8 @@ const manipulate = (year, month) => {
     // Chuyển đổi ngày dương thành ngày âm
     // let lunarDate = convertToLunarDate(i, month + 1, year);
     convertSolar_Lunar_Today(i, month + 1, year, timeZone);
-
     getLunarMonth11(year, timeZone);
     var contentBoxAm = convertSolar_Lunar(i, month + 1, year, timeZone);
-
     var ngayCanChi =
       DayCan(INT(i), INT(month + 1), INT(year)) +
       " " +
@@ -134,7 +131,7 @@ const manipulate = (year, month) => {
   }
 
   // Cập nhật văn bản của phần tử ngày hiện tại với tháng và năm hiện tại đã được định dạng
-  currdate.innerText = `Lịch âm ${months[month]} năm ${year}`;
+  currdate.innerHTML = `Lịch âm ${months[month]} năm ${year}`;
 
   //Tile lịch âm
   titleLichAm.innerHTML = `Tháng ${contentBoxAm[1]} Năm ${contentBoxAm[2]} (Quý Mão)`;
@@ -333,11 +330,8 @@ convertSolar_Lunar = (dd, mm, yy, timeZone) => {
     b11,
     lunarLeap;
   dayNumber = getJudius(dd, mm, yy);
-
   k = INT((dayNumber - 2415021.076998695) / 29.530588853);
-
   monthStart = getNewMoonDay(k + 1, timeZone);
-
   if (monthStart > dayNumber) {
     monthStart = getNewMoonDay(k, timeZone);
   }
@@ -351,7 +345,6 @@ convertSolar_Lunar = (dd, mm, yy, timeZone) => {
     b11 = getLunarMonth11(yy + 1, timeZone);
   }
   lunarDay = dayNumber - monthStart + 1;
-
   diff = INT((monthStart - a11) / 29);
   lunarLeap = 0;
   lunarMonth = diff + 11;
@@ -654,7 +647,7 @@ let tdList = document.querySelectorAll(".vncal td");
 
 // Lặp qua từng thẻ td và thêm sự kiện click
 tdList.forEach(function (td) {
-  td.addEventListener("click", function () {
+  td.addEventListener("mousedown", function () {
     // Lấy dữ liệu từ các phần tử con bên trong thẻ td
     let duong = this.querySelector(".duong").textContent;
     let amFull = this.querySelector(".am").textContent;
@@ -676,6 +669,12 @@ tdList.forEach(function (td) {
     // In ra đối tượng chứa dữ liệu
     console.log(data);
     dateDetail(data);
+
+    // Kéo trang đến phần tử có id là "box-detail"
+    let boxDetail = document.getElementById("box-detail");
+    if (boxDetail) {
+      boxDetail.scrollIntoView({ behavior: "smooth" });
+    }
   });
 });
 
@@ -705,6 +704,12 @@ if (currentTd) {
   // In ra đối tượng chứa dữ liệu
   console.log(data);
   dateDetail(data);
+
+  // Kéo trang đến phần tử có id là "box-detail"
+  let boxDetail = document.getElementById("box-detail");
+  if (boxDetail) {
+    boxDetail.scrollIntoView({ behavior: "smooth" });
+  }
 } else {
   // Nếu không có phần tử td "current", mặc định lấy dữ liệu ngày đầu tiên
   let firstTd = document.querySelector(".vncal td");
@@ -727,6 +732,12 @@ if (currentTd) {
 
     console.log(data);
     dateDetail(data);
+
+    // Kéo trang đến phần tử có id là "box-detail"
+    let boxDetail = document.getElementById("box-detail");
+    if (boxDetail) {
+      boxDetail.scrollIntoView({ behavior: "smooth" });
+    }
   }
 }
 
@@ -773,7 +784,7 @@ function addClickEventToTDs() {
 
   // Lặp qua từng thẻ td và thêm sự kiện click
   tdList.forEach(function (td) {
-    td.addEventListener("click", function () {
+    td.addEventListener("mousedown", function () {
       // Lấy dữ liệu từ các phần tử con bên trong thẻ td
       let duong = this.querySelector(".duong").textContent;
       let amFull = this.querySelector(".am").textContent;
@@ -795,6 +806,12 @@ function addClickEventToTDs() {
       // In ra đối tượng chứa dữ liệu
       console.log(data);
       dateDetail(data);
+
+      // Kéo trang đến phần tử có id là "box-detail"
+      let boxDetail = document.getElementById("box-detail");
+      if (boxDetail) {
+        boxDetail.scrollIntoView({ behavior: "smooth" });
+      }
     });
   });
 }
@@ -803,45 +820,34 @@ function renderTable(e) {
   month = e.id - 1;
   manipulate(year, month);
   addClickEventToTDs();
-
-  let li = e.parentElement;
-  let ul = li.parentElement;
-  let a = ul.querySelectorAll("a");
-  for (let i = 0; i < a.length; i++) {
-    a[i].classList.remove("background__color");
-  }
-  e.classList.toggle("background__color");
+  classToggle(e);
 }
 
-function renderTableYear(e) {
-  e.setAttribute("href", "#table");
-  year = parseInt(e.id);
-
-  manipulate(year, month);
-  addClickEventToTDs();
-  let li = e.parentElement;
-  let ul = li.parentElement;
-  let a = ul.querySelectorAll("a");
-  for (let i = 0; i < a.length; i++) {
-    a[i].classList.remove("background__color");
-  }
-  e.classList.toggle("background__color");
-}
-
-calendarYear();
-
-function calendarYear() {
+calendarYear(8);
+function calendarYear(x) {
   const ul = document.getElementById("calendar__year");
-  let a = ul.querySelectorAll("a");
+  const a = ul.querySelectorAll("a");
   let length = a.length;
-  let y = year - 8;
+  year = year - x;
   for (let i = 0; i < length; i++) {
-    if (i === 8) {
-      a[i].innerText = `LỊCH ÂM ${year}`;
-      a[i].id = year;
-    } else {
-      a[i].innerText = `LỊCH ÂM ${y + i}`;
-      a[i].id = y + i;
-    }
+    a[i].innerText = `LỊCH ÂM ${year + i}`;
+    a[i].id = year + i;
+    a[i].href = "#br_table";
+
+    a[i].addEventListener("click", () => {
+      manipulate(year + i, month);
+      addClickEventToTDs();
+      classToggle(a[i]);
+    });
   }
+}
+
+function classToggle(x) {
+  let li = x.parentElement;
+  let ul = li.parentElement;
+  let a = ul.querySelectorAll("a");
+  for (let i = 0; i < a.length; i++) {
+    a[i].classList.remove("background__color");
+  }
+  x.classList.toggle("background__color");
 }
